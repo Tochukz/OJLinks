@@ -1,2 +1,2 @@
-# BookStore
-An online bookstore built using Laravel 5.0.
+## BookStore
+An online bookstore built using Laravel 5.5.
