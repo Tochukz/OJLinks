@@ -181,7 +181,7 @@ function resizeNavCol(){
         navCol.height(sliderH);
         navH  = navCol.height();
         list.height(parseInt(navH/noOfList)-1); 
-        listFontSize  = navH/24 
+        listFontSize  = navH/24; 
         list.css('font-size', listFontSize+'px');
     } else {
         setTimeout(resizeNavCol, 3000);
@@ -198,10 +198,13 @@ function getBookCategories(){
     $.getJSON('/getJSONfile', function(data, status){
         catArray = data['catArray'];
         categories = data['categories'];
+        homePages = ['http://ojlinks2.test', 'http://ojlinks2.test/', 'http://ojlinks.tochukwu.xyz', 'http://ojlinks.tochukwu.xyz/', 
+                             'localhost:9000', 'localhost/'];
         //Display just 3 rows of books ONLY for the index page. The user can request more later.
-         if (href == 'http://ojlinks2.test' || href == 'http://ojlinks2.test/' || href == 'http://ojlinks.tochukwu.xyz/' || href == 'http://ojlinks.tochukwu.xyz') {         
+         //if (href == 'http://ojlinks2.test' || href == 'http://ojlinks2.test/' || href == 'http://ojlinks.tochukwu.xyz/' || href == 'http://ojlinks.tochukwu.xyz') {  
+        if(homePages.includes(href)){
             randN = randomArrayIndex(catArray); //randN becomes a randon array index
-            noOfRecursion = 3
+            noOfRecursion = 3;
             build(catArray[randN], noOfRecursion);
         }
     });
