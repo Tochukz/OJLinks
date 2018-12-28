@@ -40,12 +40,12 @@ Route::get('db/suggest', 'BookstoreController@suggest');
 Route::get('book/search', 'BookstoreController@search');
 
 /*Shopping cart Mostly AJAX request*/
-Route::get('cart/book/{id}', 'BookstoreController@addToCart');
-Route::get('cart/get','BookstoreController@getCart');
-Route::get('cart/empty','BookstoreController@emptyCart');
-Route::get('cart/checkout', 'BookstoreController@checkout');
-Route::get('cart/delete/{id}','BookstoreController@deleteCart');
-Route::post('cart/update', 'BookstoreController@updateCart');
+Route::get('cart/book/{id}', 'CartController@addToCart');
+Route::get('cart/get','CartController@getCart');
+Route::get('cart/empty','CartController@emptyCart');
+Route::get('cart/checkout', 'CartController@checkout');
+Route::get('cart/delete/{id}','CartController@deleteCart');
+Route::post('cart/update', 'CartController@updateCart');
 
 /*Payment System*/
 Route::group([], function(){
