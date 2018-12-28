@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+nav {
+  height: 100%;
+}
+nav .container-fluid, nav .row {
+  height: 100%;
+}
+nav .col-sm-3 {
+  height: 10%;
+  position: fixed;
+  background-color: #fff;
+}
+nav .col-sm-3 .navbar-header .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+nav .col-sm-3 .navbar-header .navbar-brand img {
+  height: 100%;
+  margin-top: 3px;
+}
+nav .col-sm-9 {
+  background-color: #4d4d4d;
+  height: 10%;
+}
+
+section {
+  height: 100%;
+}
+section .container-fluid, section .row {
+  height: 100%;
+}
+section .col-sm-3 {
+  background-color: #CC6600;
+  height: 90%;
+  position: fixed;
+  top: 10%;
+}
+section .col-sm-3 ul {
+  margin-top: 2em;
+}
+section .col-sm-3 ul li a {
+  color: #f2f2f2;
+  font-weight: bold;
+  background-color: transparent;
+}
+section .col-sm-3 ul li a:link {
+  color: #f2f2f2;
+  font-weight: bold;
+  background-color: transparent;
+}
+section .col-sm-3 ul li a:visited {
+  color: #f2f2f2;
+  font-weight: bold;
+  background-color: transparent;
+}
+section .col-sm-3 ul li a:hover {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li a:active {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li.active a {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li.active a:hover {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=admin.css.map */

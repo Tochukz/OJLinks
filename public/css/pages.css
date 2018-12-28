@@ -1,0 +1,125 @@
+ .nav-col ul{
+    font-size:0.9em;
+    background-color:transparent;
+}
+.nav-col li{
+    padding:0;
+    margin:0;
+}
+.nav-col li:last-child{
+    border-bottom:solid 1px #383838;
+}
+.nav-col a{
+  height:100%;
+  width:100%;
+}
+.book-record{
+    margin-bottom:1em;
+    border:solid silver 1px;
+}
+.book-record img{
+    height:12em;
+}
+.book-record div{
+    
+}
+.book-record div:first-child{
+    text-align:center;
+    overflow:hidden;
+    padding-left:0.5em;
+    padding-bottom:0.5em;
+    display:table-cell;
+    width:30%;
+    vertical-align:top;
+    float:none;
+}
+.book-record div:nth-child(2){
+    border-left:solid silver 1px;
+     display:table-cell;
+     float:none;
+     width:70%;
+     vertical-align:top;
+   /* text-align:center;*/
+}
+.book-record p.price{
+    margin:0.4em;
+    color:red;
+}
+.book-record button{
+    background-image: url(../img/strip.png);
+    border-radius: 0.4em;
+    width: 8em;
+    border: solid orange 1px;
+}
+.book-record button:hover{
+    background-image:url('../img/strip1.png');
+}
+.book-record .details{
+
+}
+.book-record .by{
+     font-weight:bold;   
+}
+.nav-col{
+    padding:0;
+}
+
+@media(max-width:1119px){
+    .nav-col li{
+        height:2.2em;
+        font-size:0.85em;
+    }  
+    .book-cat-header h4, .book-cat-header li{
+        font-size:0.85em;
+    } 
+    .book-record button{
+        font-size: 0.85em;
+        border-radius: 0.3em;
+        height: 2.2em;
+        width:7em;
+    }
+    .book-record img{
+        height:10em;
+    }
+    .book-record .details{
+        font-size:0.85em;
+    }
+    .book-record p.price{
+        font-size:0.85em;
+    }
+    .book-record .by{
+        font-size:0.85em;
+        font-weight:bold;
+    }
+}
+@media(max-width:760px){
+   
+    .book-record div:first-child{
+        display:block;   
+        width:100%;  
+       /* float:left;*/
+    }
+    .book-record div:nth-child(2){
+        display:block;   
+        border-left:none;  
+        width:100%;        
+    }
+}
+@media(max-width:450px){
+    div.col-sm-12{
+        padding:0;
+    }
+    div.col-sm-10{
+        padding:0;
+    }
+    div.book-cat-header{
+        width:100%;
+    }
+    .book-record div:first-child{
+        border:none;
+    }
+    .book-record{
+        margin-bottom:0.5em;
+        margin:1em 2em;
+    }
+}

@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+nav .col-sm-3, nav col-md-2 {
+  height: 4em;
+  position: fixed;
+  background-color: #fff;
+}
+nav .col-sm-3 .navbar-header .navbar-brand, nav col-md-2 .navbar-header .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+nav .col-sm-3 .navbar-header .navbar-brand img, nav col-md-2 .navbar-header .navbar-brand img {
+  width: 100%;
+  margin-top: 3px;
+}
+nav .col-sm-9, nav col-md-10 {
+  background-color: #4d4d4d;
+  height: 4em;
+}
+
+section {
+  height: 100%;
+}
+section .container-fluid, section .row {
+  height: 100%;
+}
+section .col-sm-3, section col-md-2 {
+  background-color: #CC6600;
+  height: 95%;
+  position: fixed;
+  top: 4em;
+}
+section .col-sm-3 ul, section col-md-2 ul {
+  margin-top: 2em;
+}
+section .col-sm-3 ul li a, section col-md-2 ul li a {
+  font-weight: bold;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li a:link, section col-md-2 ul li a:link {
+  font-weight: bold;
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li a:visited, section col-md-2 ul li a:visited {
+  color: #f2f2f2;
+  background-color: #4d4d4d;
+}
+section .col-sm-3 ul li a:hover, section col-md-2 ul li a:hover {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li a:active, section col-md-2 ul li a:active {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+section .col-sm-3 ul li a:focus, section col-md-2 ul li a:focus {
+  background-color: #4d4d4d;
+  color: #CC6600;
+}
+section .col-sm-3 ul li ul, section col-md-2 ul li ul {
+  margin: 0;
+  background-color: #4d4d4d;
+  padding: 0 2em 1em;
+}
+section .col-sm-3 ul li ul a:hover, section col-md-2 ul li ul a:hover {
+  color: #CC6600;
+  text-decoration: none;
+}
+section .col-sm-3 ul li.active a, section col-md-2 ul li.active a {
+  background-color: #4d4d4d;
+  color: #CC6600;
+}
+section .col-sm-3 ul li.active a:hover, section col-md-2 ul li.active a:hover {
+  background-color: #4d4d4d;
+  color: #CC6600;
+}
+section .col-sm-3 ul li.nav-divider, section col-md-2 ul li.nav-divider {
+  background-color: #D2691E;
+}
+section .col-sm-9 .col-sm-12, section col-md-10 .col-sm-12 {
+  margin-top: 2em;
+}
+section .col-sm-9 .col-sm-12 img, section col-md-10 .col-sm-12 img {
+  height: 5em;
+}
+section .col-sm-9 .col-sm-6 .btn-primary, section col-md-10 .col-sm-6 .btn-primary {
+  width: 10em;
+  background-color: orange;
+  border-color: #CC6600;
+  color: #000;
+  font-weight: bold;
+}
+section .col-sm-9 .header-form .form-control, section col-md-10 .header-form .form-control {
+  display: inline-block;
+  width: 8em;
+  height: 2em;
+  margin-bottom: 0.5em;
+}
+section .col-sm-9 .header-form .btn-primary, section col-md-10 .header-form .btn-primary {
+  height: 2.2em;
+  background-color: orange;
+  color: #000;
+  margin-bottom: 0.5em;
+  border-color: #CC6600;
+  width: 6em;
+  margin-right: 1.5em;
+  font-weight: bold;
+}
+section .col-sm-9 .header-form span, section col-md-10 .header-form span {
+  color: #4d4d4d;
+  font-weight: bold;
+}
+section .col-sm-9 .header-form .form-group, section col-md-10 .header-form .form-group {
+  display: inline-block;
+  width: 48%;
+}
+section .col-sm-9 table tr td:first-child, section col-md-10 table tr td:first-child {
+  text-align: center;
+}
+section .col-sm-9 table tr th:first-child, section col-md-10 table tr th:first-child {
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  section .col-md-10 .header-form .form-group, section .col-sm-9 .header-form .form-group {
+    display: block;
+    width: 90%;
+    margin: 0;
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=admin.css.map */

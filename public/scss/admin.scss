@@ -1,0 +1,174 @@
+$white:#fff;
+$black:#000;
+$orange:#CC6600;
+$lightAsh:lighten($black, 95%);
+$darkAsh:lighten($black, 30%);
+@mixin dots{
+    border:dashed red 1px;
+}
+html, body{
+    height:100%;
+}
+body{
+    background-color:$lightAsh;
+}
+nav{
+    
+    .container-fluid, .row{
+        
+    }
+    .col-sm-3, col-md-2{     
+        height:4em;
+        position:fixed;
+        background-color:$white;
+        .navbar-header{           
+            .navbar-brand{            
+                padding:0;
+                margin:0;
+                img{                    
+//                   height:100%;
+                   width:100%;
+                   margin-top:3px;
+                }                
+            }
+        }
+    }
+    .col-sm-9, col-md-10{       
+        background-color:$darkAsh;
+        height:4em;
+    }
+}
+section{
+    height:100%;
+    .container-fluid, .row{
+        height:100%;
+    }
+    .col-sm-3, col-md-2{
+        background-color:$orange;      
+        height:95%;        
+        position:fixed;
+        top:4em;
+         ul{
+             margin-top:2em;
+            li{
+                a{                    
+                    font-weight:bold;                  
+                    border-bottom-left-radius:0;
+                    border-bottom-right-radius:0;
+                    background-color:$darkAsh;
+                    color:$lightAsh; 
+                }
+                a:link{                 
+                    font-weight:bold;
+                    background-color:$darkAsh;
+                    color:$lightAsh; 
+                }
+                a:visited{
+                    color:$lightAsh;                   
+                    background-color:$darkAsh;
+                }
+                a:hover{
+                    background-color:$darkAsh;
+                    color:$lightAsh;
+                }
+                a:active{
+                    background-color:$darkAsh;
+                    color:$lightAsh;                    
+                }
+                a:focus{
+                    background-color:$darkAsh;
+                    color:$orange;
+                }
+                ul{
+                   margin:0;
+                   background-color:$darkAsh;
+                   padding:0 2em 1em;
+                   a:hover{
+                      color:$orange;
+                      text-decoration:none;
+                  }
+                }
+            }
+            li.active{
+                a{
+                    background-color:$darkAsh;
+                    color:$orange;                    
+                } 
+                a:hover{
+                    background-color:$darkAsh;
+                    color:$orange;
+                }
+            }
+            li.nav-divider{
+                background-color:#D2691E;     
+            }
+        }
+    }
+     .col-sm-9, col-md-10{
+         .col-sm-12{
+             margin-top:2em;
+             img{
+                 height:5em;
+             }             
+         }
+         .col-sm-6{
+             .btn-primary{
+                 width:10em;
+                 background-color:orange;
+                 border-color:$orange;
+                 color:#000;
+                 font-weight:bold;
+             }
+         }
+         .header-form{
+             .form-control{
+                 display:inline-block;
+                 width:8em;
+                 height:2em;
+                 margin-bottom:0.5em;
+             }
+             .btn-primary{
+                height:2.2em;          
+                background-color:orange;
+                color:#000;
+                margin-bottom:0.5em;
+                border-color:$orange;
+                width:6em;
+                margin-right:1.5em;
+                font-weight:bold;
+             }
+             span{
+                 color:$darkAsh;             
+                 font-weight:bold;
+             }
+             .form-group{
+                 display:inline-block;
+                 width:48%;
+             }
+         }         
+         table{
+             tr{
+                 td:first-child{
+                   text-align:center;
+                 }
+                 th:first-child{
+                   text-align:center;
+                 }
+             }
+         }
+    }
+}
+@media(max-width:860px){
+    section{
+        .col-md-10, .col-sm-9{
+            .header-form{
+                 .form-group{
+                     display:block;
+                     width:90%;
+                     margin:0;                   
+                     float:none;
+                 }
+            }
+        }
+    }
+}
