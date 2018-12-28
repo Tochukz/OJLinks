@@ -199,9 +199,8 @@ function getBookCategories(){
         catArray = data['catArray'];
         categories = data['categories'];
         homePages = ['http://ojlinks.tochukwu.xyz', 'http://ojlinks.tochukwu.xyz/', 'http://localhost:9000/', 'http://localhost:9000'];
-        //Display just 3 rows of books ONLY for the index page. The user can request more later.
-         //if (href == 'http://ojlinks2.test' || href == 'http://ojlinks2.test/' || href == 'http://ojlinks.tochukwu.xyz/' || href == 'http://ojlinks.tochukwu.xyz') {  
-        if(homePages.includes(href)){ console.log(href);
+        //Display just 3 rows of books ONLY for the index page. The user can request more later. 
+        if(homePages.includes(href)){
             randN = randomArrayIndex(catArray); //randN becomes a randon array index
             noOfRecursion = 3;
             build(catArray[randN], noOfRecursion);
