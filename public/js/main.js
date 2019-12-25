@@ -198,7 +198,7 @@ function getBookCategories(){
     $.getJSON('/getJSONfile', function(data, status){
         catArray = data['catArray'];
         categories = data['categories'];
-        homePages = ['http://ojlinks.tochukwu.xyz', 'http://ojlinks.tochukwu.xyz/', 'http://localhost:9000/', 'http://localhost:9000'];
+        homePages = ['http://ojlinks.tochukwu.xyz', 'http://ojlinks.tochukwu.xyz/', 'http://ojlinks.test:8080/', 'http://ojlinks.test:8080'];
         //Display just 3 rows of books ONLY for the index page. The user can request more later. 
         if(homePages.includes(href)){
             randN = randomArrayIndex(catArray); //randN becomes a randon array index

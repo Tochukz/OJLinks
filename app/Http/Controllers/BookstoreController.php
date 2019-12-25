@@ -95,7 +95,16 @@ class BookstoreController extends Controller
         $books = Book::where('category', $category)->select('id', 'title', 'author', 'price', 'img')->inRandomOrder()->take(6)->get();
         return response(json_encode($books));
     }
-    
+
+    /**
+     * all books as json object
+     */
+    public function allBooks()
+    {
+      $books = Book::all();
+      return response(json_encode($books));
+    }
+
     /**
      * Returns a JSON string of book categories and sub category to the client.
      * 

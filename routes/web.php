@@ -35,7 +35,7 @@ Route::group([], function(){
 Route::get('getbooks/{category}', 'BookstoreController@getBooks');
 Route::get('getJSONfile', 'BookstoreController@getJSONfile');
 Route::post('testing', 'BookstoreController@testing');
-Route::get('getBookList', 'BookstoreController@getBookList');
+Route::get('allbooks', 'BookstoreController@allBooks');
 Route::get('db/suggest', 'BookstoreController@suggest');
 Route::get('book/search', 'BookstoreController@search');
 
